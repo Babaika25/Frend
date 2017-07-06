@@ -1,0 +1,176 @@
+#include <iostream>
+#include <string>
+#include <conio.h>
+#include <stdio.h>
+#include <conio.h>
+#include <Windows.h>
+using namespace std;
+enum ConsoleColor {
+Black = 0,
+Blue = 1,
+Green = 2,
+Cyan = 3,
+Red = 4,
+Magenta = 5,
+Brown = 6,
+LightGray = 7,
+DarkGray = 8,
+LightBlue = 9,
+LightGreen = 10,
+LightCyan = 11,
+LightRed = 12,
+LightMagenta = 13,
+Yellow = 14,
+White = 15
+};
+int main()
+{
+    SetConsoleCP(1251);// установка кодовой страницы win-cp 1251 в поток ввода
+    SetConsoleOutputCP(1251); // установка кодовой страницы win-cp 1251 в поток вывода
+    string s;
+    int a;
+    setlocale(LC_ALL, "Russian");
+    HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+    system("color F0");
+    puts("Как тебя зовут?");
+    SetConsoleTextAttribute(hConsole, (WORD) ((Blue << 4) | Yellow));
+    cout << "Введите имя: ";
+    getline (cin, s);
+    SetConsoleTextAttribute(hConsole, (WORD) ((White << 4) | Black));
+    cout << "Здравствуй, " << s << "!" << endl;
+    cout << "С чем я могу тебе помочь?";
+    cout << endl;
+    SetConsoleTextAttribute(hConsole, (WORD) ((Blue << 4) | Yellow));
+    cout <<"Выберите пункт из заданного списка и нажмите Enter"<< endl;
+    SetConsoleTextAttribute(hConsole, (WORD) ((White << 4) | Black));
+    cout << "1. Сложить n чисел" << endl;
+    cout << "2. Перемножить n чисел" << endl;
+    cout << "3. Решить квадратное уравнение" << endl;
+    cout << "4. Перевести сантиметры в километры" << endl;
+    cout << "5. Сложить n чисел" << endl;
+    cout << "6. Сложить n чисел" << endl;
+    cout << "7. Сложить n чисел" << endl;
+    cout << "8. Сложить n чисел" << endl;
+    cout << "9. Сложить n чисел" << endl;
+    cout << "10. Сложить n чисел" << endl;
+    cout << "11. Сложить n чисел" << endl;
+    cout << "12. Сложить n чисел" << endl;
+    cout << "13. Сложить n чисел" << endl;
+    cout << "14. Сложить n чисел" << endl;
+    cout << "15. Сложить n чисел" << endl;
+    cout << "16. Сложить n чисел" << endl;
+    cout << "17. Сложить n чисел" << endl;
+    cout << "18. Сложить n чисел" << endl;
+    cout << "19. Сложить n чисел" << endl;
+    cout << "20. Сложить n чисел" << endl;
+    cout << "21. Сложить n чисел" << endl;
+    cout << "22. Сложить n чисел" << endl;
+    cout << "23. Сложить n чисел" << endl;
+    cout << "24. Сложить n чисел" << endl;
+    cout << "25. Сложить n чисел" << endl;
+    SetConsoleTextAttribute(hConsole, (WORD) ((Blue << 4) | Yellow));
+    cin >> a ;
+    if (a==1)
+    {
+
+    }
+    if (a==2)
+    {
+
+    }
+    if (a==3)
+    {
+
+    }
+    if (a==4)
+    {
+
+    }
+    if (a==5)
+    {
+
+    }
+    if (a==6)
+    {
+
+    }
+    if (a==7)
+    {
+
+    }
+    if (a==8)
+    {
+
+    }
+    if (a==9)
+    {
+
+    }
+    if (a==10)
+    {
+
+    }
+    if (a==11)
+    {
+
+    }
+    if (a==12)
+    {
+
+    }
+    if (a==13)
+    {
+
+    }
+    if (a==14)
+    {
+
+    }
+    if (a==15)
+    {
+
+    }
+    if (a==16)
+    {
+
+    }
+    if (a==17)
+    {
+
+    }
+    if (a==18)
+    {
+
+    }
+    if (a==19)
+    {
+
+    }
+    if (a==20)
+    {
+
+    }
+    if (a==21)
+    {
+
+    }
+    if (a==22)
+    {
+
+    }
+    if (a==23)
+    {
+
+    }
+    if (a==24)
+    {
+
+    }
+    if (a==25)
+    {
+
+    }
+    getch();
+    system("pause");
+    return 0;
+}
